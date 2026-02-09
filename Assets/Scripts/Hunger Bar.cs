@@ -15,9 +15,9 @@ public class HungerBar : MonoBehaviour
     void Update()
     {
         //If the user clicked then hunger bar value ++ and yeah
-        if(Mouse.current.wasPressedThisFrame)
-        {
-            hungerBar.value += 10 * Time.deltaTime;
-        }
+        //if(Mouse.current.wasPressedThisFrame)
+        //{
+        //    hungerBar.value += 10 * Time.deltaTime;
+        //}
     }
 }
