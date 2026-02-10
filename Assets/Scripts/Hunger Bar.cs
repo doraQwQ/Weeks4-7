@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class HungerBar : MonoBehaviour
 {
+    public UnityEngine.UI.Slider healthBar;
     public UnityEngine.UI.Slider hungerBar;
     public float hunger = 100;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,9 +16,12 @@ public class HungerBar : MonoBehaviour
     void Update()
     {
         //If the user clicked then hunger bar value ++ and yeah
-        //if(Mouse.current.wasPressedThisFrame)
-        //{
-        //    hungerBar.value += 10 * Time.deltaTime;
-        //}
+        if(Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            hungerBar.value += 10;
+            
+            //Debug.Log(hungerBar.value);
+        }
+        hungerBar.value -= 5 * Time.deltaTime;
     }
 }

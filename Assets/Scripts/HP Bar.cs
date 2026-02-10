@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class HPBar : MonoBehaviour
 {
@@ -14,7 +15,11 @@ public class HPBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            healthBar.value += 2;
+
+        }
         health -= 5*Time.deltaTime;
         healthBar.value = health ;
     }
