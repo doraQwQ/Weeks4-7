@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 03ec188ce33edff4e87484ca2a627e2a
+guid: 2e62883696f682b41afeecd9493462f1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3737642103207581742
-    second: Eating_0
+      213: -240327516165942470
+    second: People_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Eating_0
+      name: People_0
       rect:
         serializedVersion: 2
-        x: 56
-        y: 39
-        width: 721
-        height: 856
+        x: 60
+        y: 49
+        width: 495
+        height: 587
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e285b33a0b5ced330800000000000000
-      internalID: 3737642103207581742
+      spriteID: a335d29b56f2aacf0800000000000000
+      internalID: -240327516165942470
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Eating_0: 3737642103207581742
+      People_0: -240327516165942470
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
