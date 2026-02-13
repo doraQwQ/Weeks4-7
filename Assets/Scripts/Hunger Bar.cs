@@ -19,8 +19,8 @@ public class HungerBar : MonoBehaviour
         if(Mouse.current.leftButton.wasPressedThisFrame)
         {
             hungerBar.value += 10;
-            
-            //Debug.Log(hungerBar.value);
+            healthBar.value+= 5;
+            Debug.Log(hungerBar.value);
         }
         hungerBar.value -= 5 * Time.deltaTime;
     }

@@ -1,3 +1,4 @@
+using System.ComponentModel.Design.Serialization;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,19 +9,24 @@ public class HPBar : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        healthBar.maxValue = health;
-        healthBar.value = health;
+        healthBar.maxValue = 100;
+        healthBar.value = 80;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        //if (Mouse.current.leftButton.wasPressedThisFrame)
+        //{
+        //    healthBar.value += 2;
+
+        //}
+  
+        healthBar.value -= 7 * Time.deltaTime;
+        if (healthBar.value > 100)
         {
-            healthBar.value += 2;
 
         }
-        health -= 5*Time.deltaTime;
-        healthBar.value = health ;
     }
+    
 }
