@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -9,6 +10,11 @@ public class Food : MonoBehaviour
     public GameObject hamburger;
     public GameObject cake;
     public GameObject waffle;
+
+    private GameObject spawned = null; // store current spawned food
+    private Image food = null;         // Image of the current food
+    private bool isFoodSpawned = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,29 +32,44 @@ public class Food : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
-            int num= Random.Range(0, 5); // random number between 0 and 4
-            if(num==0)
+            if (isFoodSpawned)
             {
-                Instantiate(chick_Wings, new Vector3(0,0,0), Quaternion.identity);
+                Destroy(spawned);
+                isFoodSpawned = false;
             }
-            else if(num == 1)
+            int num = Random.Range(0, 5); // random number between 0 and 4
+            if (num == 0)
             {
-                Instantiate(chick_Nuggs, new Vector3(0, 0, 0), Quaternion.identity);
+                 spawned = Instantiate(chick_Wings, transform.parent);
+
             }
-            else if(num == 2)
+            else if (num == 1)
             {
-                Instantiate(hamburger, new Vector3(0, 0, 0), Quaternion.identity);
+                 spawned = Instantiate(chick_Nuggs, transform.parent);
+
             }
-            else if(num == 3)
+            else if (num == 2)
             {
-                Instantiate(cake, transform.position, Quaternion.identity);
+                 spawned = Instantiate(hamburger, transform.parent);
+
             }
-            else if(num == 4)
+            else if (num == 3)
             {
-                Instantiate(waffle, transform.position, Quaternion.identity);
+                 spawned = Instantiate(cake, transform.parent);
             }
+            else
+            {
+                 spawned = Instantiate(waffle, transform.parent);
+            }
+            food = spawned.GetComponent<Image>();
+            food.color = new Color(1, 1, 1, 1);
+            isFoodSpawned = true;
+
+
+
         }
         
     }
