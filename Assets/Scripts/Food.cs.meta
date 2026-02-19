@@ -1,2 +1,16 @@
 fileFormatVersion: 2
 guid: a73cac0dbcfe4c34eb634b2651f4d41a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - chick_Wings: {fileID: 7197567908720772881, guid: af6c89644d6aabc43a6a242e028a98bc, type: 3}
+  - chick_Nuggs: {fileID: 7612802588106492988, guid: b4c26d29825c9b14c9e988123f8f5913, type: 3}
+  - hamburger: {fileID: 2115789491958539579, guid: 1f59abc35ad288c4b88bc989b4c8075d, type: 3}
+  - cake: {fileID: 378589091756524833, guid: 26ac3b77f272d6945ad18382bc89dfcd, type: 3}
+  - waffle: {fileID: 972006259703133566, guid: 9290b0fa767af104e95609b4dbbaa5bb, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
