@@ -22,7 +22,7 @@ public class Speed : MonoBehaviour
         bool isInHazard = hazardRenderer.bounds.Contains(player.transform.position);
         if (isInHazard && !wasinHazard)
         {
-            player.TakeDam();
+            //player.TakeDam();
             wasinHazard = true;
             //Lowers the speed of the player
              
