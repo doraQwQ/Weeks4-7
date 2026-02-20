@@ -18,15 +18,7 @@ public class Food : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-    //cosinder making some sentence to9 be instanciate and destoried
-    //like "eat, eat ,eat, if I win this. I don;t need to work for 10 years or more!!!"
-    //""Ugh, I am full. No, I need to eat more
-    //The other contenstioen seems to be behind me on food number, I must'en give up!
-    // Just... hang on... a little longer
-    //I wish my stomach can share with anyone else, then I can keep eating!!
-    //There is no give up in my dictionary.
-    // This food is really yummy, I feel like they hire michelin star chefs.
-    //Thou these are simple way of cooking, they can be hard to make with the techinques.
+
     }
 
     // Update is called once per frame

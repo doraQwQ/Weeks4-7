@@ -21,7 +21,7 @@ public class HungerBar : MonoBehaviour
             healthBar.value = Random.Range(0, 90);
             storeFood = 0;
         }
-        //If the user clicked then hunger bar value ++ and yeah
+        //If the user clicked then hunger bar value +, also increases health bar value
         if(Mouse.current.leftButton.wasPressedThisFrame)
         {
             hungerBar.value += 10;
@@ -31,7 +31,6 @@ public class HungerBar : MonoBehaviour
                 storeFood += 100-(int)hungerBar.value;
             }
             healthBar.value+= 5;
-            Debug.Log(hungerBar.value);
         }
         hungerBar.value -= 5 * Time.deltaTime;
     }
